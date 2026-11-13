@@ -1,4 +1,4 @@
 <?php
 
-// Print a message
+// print a message
 echo "Hello, World!";

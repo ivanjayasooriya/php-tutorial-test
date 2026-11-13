@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>
-        <!-- Using PHP inside HTML tags -->
+        <!-- using PHP inside HTML tags -->
         <?php echo "Welcome!"; ?>
     </h1>
 </body>
