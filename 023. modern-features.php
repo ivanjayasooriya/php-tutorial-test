@@ -37,7 +37,7 @@ $expensive = array_filter($products, isExpensive(...)); // (...)
 
 // Attributes - Structured Metadata
 #[Route('/users/{id}', methods: ['GET'])]
-public function getUser(int $id): User
+function getUser(int $id): User
 {
     return new User();
 }
