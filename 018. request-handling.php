@@ -29,4 +29,17 @@ print_r($server);
 
 
 
+// Handling Form Submission
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = trim($_POST['username'] ?? '');
+    $email = filter_var($_POST['email'] ?? '', FILTER_VALIDATE_EMAIL);
+
+    if (!$email) {
+        echo "Invalid email address.";
+    } else {
+        echo "Form submitted successfully.";
+    }
+}
+
 
